@@ -1,0 +1,26 @@
+/* Css */
+/*@Charset "UTF-8";*/
+
+.card-img{
+
+    padding-top: 25px;
+    align-self: left
+    
+}
+
+.btn-sucess{
+
+    padding-top: 50px
+}
+
+.nav-wrapper{
+    background-color:pink
+}
+
+.modal-dialog{
+
+}
+
+.container{
+    float: right;
+}

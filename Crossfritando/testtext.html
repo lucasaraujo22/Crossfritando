@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>teste</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script>
+        type = "text/javascript"
+
+        function validar() {
+
+            var email = user.email.value;
+
+            if (email == "#" || email.indexOf('@') == -1) {
+                alert("Encontramos um erro, por favor tente novamente!")
+                user.email.focus();
+                return false;
+            } else(
+                document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.modal');
+                    var instances = M.Modal.init(elems, options);
+                }) 
+
+            )
+
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <center>Teste</center>
+
+    <form name="user" (action="enviar.php" class="modal-trigger" ) method="POST">
+
+        Email<input type="email" name="email">
+        <input type="submit" href="#modal1" class="waves-effect waves-light btn modal-trigger"
+            onclick="return validar()">
+
+    </form>
+
+
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal  modal-fixed-footer">
+        <div class="modal-content">
+            <center>
+                <h4 class="black-text">Parabéns<br><br></h4>
+                <h5 class="black-text"> Seu email foi enviado com sucesso! <br> Fique atento, iremos enviar
+                    E-mails
+                    Diariamente.<br><br>
+                    Não perca a chance de ter uma vida saudável!
+                </h5>
+            </center>
+
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn -flat">Ok</a>
+            </div>
+
+
+
+
+
+
+            <script>
+                $(document).ready(function () {
+                    $('.modal').modal();
+                    $('#modal1').on('click', function () {});
+                });
+            </script>
+</body>
+
+</html>
